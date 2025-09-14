@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #000430 */
+/* #171c48 *//* #171c48 */
+:root{
+    --background :  #010640;
+    --secondaryBackground : #505695;
+    --text : #fff;
+    --purple : #828dff;
+    --teal : #24feee;
+    --list-item : #0e1351;
+}
+
+body{
+    background: var(--background);
+    color: var(--text);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.status{
+    padding: 30px;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 500px;
+}
+
+.details{
+    width: 100%;
+}
+
+#progressBar{
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 30px;
+    margin-top: 25px;
+}
+
+#progress{
+    width: 0;
+    height: 10px;
+    border-radius: 30px;
+    background-color: var(--teal);
+    transition: all 0.5s;
+}
+
+.circle-number{
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+form{
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    background-color: var(--background);
+    color: var(--text);
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+input::placeholder{
+    color: rgb(162, 162, 162);
+}
+
+input:focus {
+    outline: 2px solid var(--purple);
+}
+
+#addBtn{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--purple);
+    color: var(--text);
+    border: 1px solid var(--purple);
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list{
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-item{
+    border: 1px solid var(--secondaryBackground);
+    border-radius: 8px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: var(--list-item);
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-desc{
+    display: flex;
+    align-items: center;
+}
+
+.task-text{
+    margin-left: 10px;
+}
+
+.completed{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons{
+    display: flex;
+    font-size: 23px;
+    gap: 10px;
+}
+
+.trashBtn{
+    color: red;
+    cursor: pointer;
+}
+
+.editBtn{
+    cursor: pointer;
+    color: var(--purple);
+    margin-top: 2px;
+}
+
+.done-items{
+    border: 2px solid var(--purple);
+    border-radius: 13px;
+    width: 500px;
+    height: 570px;
+    margin-top: 7.8%;
+    margin-left: 60px;
+}
+
+.done-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+}

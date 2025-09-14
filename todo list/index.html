@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"
+      integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="status">
+        <div class="details">
+          <h1>Completed tasks</h1>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="circle-number">
+          <span id="number">0 / 0</span>
+        </div>
+      </div>
+      <form action="">
+        <input id="task" type="text" placeholder="Your task" />
+        <button id="addBtn" type="button">+</button>
+      </form>
+      <span style="color: red" id="inputError"></span>
+      <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <div id="inProgress-container" class="done-items">
+      <p class="done-title">In progress</p>
+      <ul id="inProgressTasks" class="task-list">
+        
+      </ul>
+    </div>
+
+    <div id="done-container" class="done-items">
+      <p class="done-title">Done</p>
+      <ul id="doneTasks" class="task-list">
+
+      </ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

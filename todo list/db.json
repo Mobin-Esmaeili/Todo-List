@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "1a72",
+      "text": "react",
+      "completed": false,
+      "status": "in-progress"
+    },
+    {
+      "id": "29d7",
+      "text": "html",
+      "completed": false,
+      "status": "todo"
+    },
+    {
+      "id": "ae32",
+      "text": "css",
+      "completed": false,
+      "status": "in-progress"
+    }
+  ]
+}
